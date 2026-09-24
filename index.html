@@ -453,6 +453,14 @@ strong{color:var(--txt);font-weight:600}
 .brandcase__page figcaption span{color:var(--mint)}
 .brandcase__note{margin-top:16px;font-size:.8rem;color:var(--txt-mut)}
 @media(max-width:768px){.brandcase__head{display:block}.brandcase__head .btn{margin-top:20px}.brandcase__grid{grid-template-columns:1fr}.brandcase{margin-top:40px}}
+
+.brand-options{border:0;min-width:0;padding:0;margin:0}.brand-options legend{margin-bottom:16px;font-weight:600}
+.brand-option{display:grid;grid-template-columns:22px 1fr auto;gap:14px;padding:20px;margin-bottom:12px;border:1px solid var(--line-2);border-radius:16px;background:var(--surface);cursor:pointer;align-items:start}
+.brand-option:has(input:checked){border-color:var(--mint);background:var(--mint-soft)}
+.brand-option input{width:20px;height:20px;accent-color:var(--mint);margin-top:3px}.brand-option b{white-space:nowrap;color:var(--mint)}
+.brand-option__desc{display:block;color:var(--txt-mut);font-size:.86rem;margin-top:6px}
+.brandcase__grid{max-width:640px;grid-template-columns:1fr}.brandcase__cta{margin-top:20px}
+@media(max-width:560px){.brand-option{padding:16px;gap:10px}.brand-option b{grid-column:2}.brandcase__page figcaption{flex-wrap:wrap}}
 </style>
 
 </head>
@@ -512,8 +520,8 @@ strong{color:var(--txt);font-weight:600}
       <a href="#identita" class="tile rv" data-cursor>
         <span class="tile__n">01</span>
         <span class="tile__t">Identità visiva e brandbook</span>
-        <span class="tile__d">Logo, palette, tipografia e linee guida: perimetro e preventivo da definire.</span>
-        <span class="tile__p">Una tantum · <b>Da definire</b></span>
+        <span class="tile__d">Logo, template, corporate identity e manuale: scegli le singole voci.</span>
+        <span class="tile__p">Una tantum · <b>Componi il preventivo</b></span>
       </a>
       <a href="#gestione" class="tile rv" data-cursor>
         <span class="tile__n">02</span>
@@ -539,16 +547,14 @@ strong{color:var(--txt);font-weight:600}
 
 <!-- 01 IDENTITÀ VISIVA -->
 <section class="sec" id="identita"><div class="container">
-<div class="sec__head"><div><div class="kicker"><b>01</b> Il tuo segno distintivo</div><h2 class="section-title">Identità visiva e <span class="serif-it accent">brandbook</span></h2></div><p class="section-sub">Uno spazio dedicato alla futura identità di <strong>VM English</strong>. Le voci qui sotto sono indicative: contenuti, quantità, tempi e investimento saranno definiti dopo il brief con Valentina.</p></div>
-<div class="split"><div><div class="badge">Bozza · dettagli da definire</div><div class="plan__list"><div class="plan__item rv"><div class="plan__ico">01</div><div><h4>Logo e varianti</h4><p>[Da definire] Concept, numero di proposte, varianti del marchio e revisioni.</p></div></div><div class="plan__item rv"><div class="plan__ico">02</div><div><h4>Palette e tipografia</h4><p>[Da definire] Colori del brand, font e criteri di utilizzo.</p></div></div><div class="plan__item rv"><div class="plan__ico">03</div><div><h4>Brandbook</h4><p>[Da definire] Struttura del manuale, regole del logo e linee guida visive.</p></div></div><div class="plan__item rv"><div class="plan__ico">04</div><div><h4>Applicazioni e template</h4><p>[Da definire] Template social, copertine e materiali coordinati.</p></div></div><div class="plan__item rv"><div class="plan__ico">05</div><div><h4>File e consegna</h4><p>[Da definire] Formati finali, file sorgenti e modalità di consegna.</p></div></div></div></div>
-<aside class="pcard rv"><div class="pcard__badge"><span class="dot"></span> Progetto <em>una tantum</em></div><h3 class="pcard__title">Identità visiva VM English</h3><p class="pcard__desc">Placeholder del preventivo per logo, sistema visivo e brandbook.</p><hr class="pcard__hr"/><div class="pcard__label">Investimento</div><div class="pcard__price">Da definire</div><hr class="pcard__hr"/><ul class="checklist"><li><span class="check">↗</span><span>Perimetro: <strong>da definire</strong></span></li><li><span class="check">↗</span><span>Revisioni: <strong>da definire</strong></span></li><li><span class="check">↗</span><span>Tempistiche: <strong>da definire</strong></span></li><li><span class="check">↗</span><span>Pagamento: <strong>da definire</strong></span></li></ul><a href="#contatti" class="btn btn--primary btn--block">Definiamo il progetto <span class="btn__chev">›</span></a><p class="pcard__note">Questa sezione è una bozza: nessun importo o deliverable è ancora confermato.</p></aside></div>
+<div class="sec__head"><div><div class="kicker"><b>01</b> Il tuo segno distintivo</div><h2 class="section-title">La tua identità, <span class="serif-it accent">voce per voce.</span></h2></div><p class="section-sub">Costruisci l’identità visiva di <strong>VM English</strong>: scegli logo, template e materiali di cui hai bisogno. Il totale è la somma delle voci selezionate, senza sconti cumulabili.</p></div>
+<div class="cfg"><fieldset class="brand-options"><legend>Scegli i servizi per il tuo brand</legend><label class="brand-option"><input type="checkbox" name="brand-service" value="logo" data-label="Logo" data-price="250"><span><strong>Logo</strong><span class="brand-option__desc">Progettazione del marchio, 2 proposte iniziali, 2 giri di revisione e file vettoriali.</span></span><b>250 €</b></label><label class="brand-option"><input type="checkbox" name="brand-service" value="avatar" data-label="Logo / foto-logo per social e sito" data-price="50"><span><strong>Logo / foto-logo per social e sito</strong><span class="brand-option__desc">Adattamento del logo esistente o selezionato: avatar social, favicon e versione per header del sito.</span></span><b>50 €</b></label><label class="brand-option"><input type="checkbox" name="brand-service" value="social" data-label="Template social" data-price="150"><span><strong>Template social</strong><span class="brand-option__desc">6 layout modificabili in Canva per post, caroselli e stories, basati sull’identità disponibile.</span></span><b>150 €</b></label><label class="brand-option"><input type="checkbox" name="brand-service" value="sito" data-label="Template sito" data-price="200"><span><strong>Template sito</strong><span class="brand-option__desc">Progetto grafico di una homepage, nelle versioni desktop e mobile. Sviluppo e pubblicazione esclusi.</span></span><b>200 €</b></label><label class="brand-option"><input type="checkbox" name="brand-service" value="corporate" data-label="Corporate identity" data-price="180"><span><strong>Corporate identity</strong><span class="brand-option__desc">Design di biglietto da visita, carta intestata e firma email. Stampa esclusa.</span></span><b>180 €</b></label><label class="brand-option"><input type="checkbox" name="brand-service" value="palette" data-label="Palette colori e tipografia" data-price="100"><span><strong>Palette colori e tipografia</strong><span class="brand-option__desc">Palette con codici colore, abbinamento dei font e gerarchie tipografiche. Licenze font escluse.</span></span><b>100 €</b></label><label class="brand-option"><input type="checkbox" name="brand-service" value="manuale" data-label="Brandbook · manuale di utilizzo" data-price="150"><span><strong>Brandbook · manuale di utilizzo</strong><span class="brand-option__desc">Impaginazione PDF delle linee guida degli elementi selezionati o già disponibili, fino a 15 pagine.</span></span><b>150 €</b></label></fieldset>
+<aside class="sum" aria-label="Riepilogo identità visiva"><h3 class="sum__title">Il tuo preventivo brand</h3><p class="sum__sub">Una tantum · IVA non dovuta</p><ul class="sum__lines" id="brandLines"></ul><hr class="sum__hr"><div class="sum__total" aria-live="polite" aria-atomic="true"><span>Totale</span><b id="brandTotal">0 €</b></div><p class="sum__foot">Prezzi per singola voce. Nessuno sconto cumulabile o sconto del pacchetto social si applica a questa sezione.</p><a id="sendBrand" class="btn btn--primary btn--block" href="#contatti">Parliamo della tua identità</a><p class="sum__foot">Se scegli solo adattamenti o template, partiamo dal logo e dall’identità che ci fornisci. Il manuale documenta gli elementi disponibili; i servizi di progettazione si selezionano separatamente. Tempi e pagamento vengono concordati alla conferma.</p></aside></div>
 <div class="brandcase" id="caso-studio-lt-motori">
-  <div class="brandcase__head"><div><div class="kicker">Caso studio · LT Motori</div><h3 class="logos__title">Dal logo a un’identità <span class="serif-it accent">coerente.</span></h3><p class="logos__sub">Un esempio concreto di cosa raccoglie un brandbook: varianti del marchio, palette, tipografia e regole che rendono riconoscibile il brand sui materiali aziendali e sui canali digitali.</p></div><a class="btn btn--ghost" href="assets/lt-motori/brandbook-lt-motori.pdf" target="_blank" rel="noopener">Apri il brandbook ↗</a></div>
+  <div class="brandcase__head"><div><div class="kicker">Caso studio · LT Motori</div><h3 class="logos__title">Dal logo a un’identità <span class="serif-it accent">coerente.</span></h3><p class="logos__sub">Un esempio concreto di cosa raccoglie un brandbook: varianti del marchio, palette, tipografia e regole che rendono riconoscibile il brand sui materiali aziendali e sui canali digitali.</p></div></div>
   <div class="brandcase__grid">
     <a class="brandcase__page" href="assets/lt-motori/brandbook-lt-motori.pdf#page=9" target="_blank" rel="noopener" aria-label="Apri il brandbook LT Motori a pagina 9: corporate identity"><figure><img src="assets/lt-motori/corporate.jpg" alt="Identità coordinata LT Motori: biglietti da visita, carta intestata, cartella e badge in nero, bianco e rosso." loading="lazy" width="1400" height="990"/><figcaption>01 · L’identità prende forma<span>Corporate identity ↗</span></figcaption></figure></a>
-    <a class="brandcase__page" href="assets/lt-motori/brandbook-lt-motori.pdf#page=3" target="_blank" rel="noopener" aria-label="Apri il brandbook LT Motori a pagina 3: il logo"><figure><img src="assets/lt-motori/logo.jpg" alt="Logo LT Motori con versione primaria, varianti su fondo chiaro e versioni monocromatiche." loading="lazy" width="1400" height="990"/><figcaption>02 · Un marchio, più applicazioni<span>Logo e varianti ↗</span></figcaption></figure></a>
-    <a class="brandcase__page" href="assets/lt-motori/brandbook-lt-motori.pdf#page=10" target="_blank" rel="noopener" aria-label="Apri il brandbook LT Motori a pagina 10: digital e social"><figure><img src="assets/lt-motori/digital.jpg" alt="Applicazioni LT Motori per sito web e template social coordinati." loading="lazy" width="1400" height="990"/><figcaption>03 · Coerenza su ogni canale<span>Digital e social ↗</span></figcaption></figure></a>
-  </div><p class="brandcase__note">Anteprima dal brandbook LT Motori · V1 · 14 pagine. Le applicazioni illustrate sono esempi del caso studio; il perimetro di VM English resta da definire.</p>
+  </div><a class="btn btn--ghost brandcase__cta" href="assets/lt-motori/brandbook-lt-motori.pdf" target="_blank" rel="noopener">vedi tutto il brandbook</a><p class="brandcase__note">Anteprima dal brandbook LT Motori · V1 · 14 pagine. Le applicazioni illustrate sono esempi del caso studio; per VM English scegli le voci nel configuratore qui sopra.</p>
 </div>
 </div></section>
 
@@ -800,9 +806,9 @@ strong{color:var(--txt);font-weight:600}
   <div class="container">
     <h2 class="section-title">Domande <span class="serif-it accent">frequenti</span></h2>
     <div class="accordion" data-accordion>
-      <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">Possiamo combinare più servizi?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Sì. Puoi combinare Gestione social (02), Componibile (03) e Formazione (04) in base alle tue esigenze. L’identità visiva (01) sarà quotata separatamente: la sezione è al momento un placeholder.</p></div></div>
+      <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">Possiamo combinare più servizi?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Sì. Puoi combinare Gestione social (02), Componibile (03) e Formazione (04) in base alle tue esigenze. L’identità visiva (01) ha un configuratore separato: il totale somma le voci selezionate, senza sconti cumulabili.</p></div></div>
       <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">I prezzi sono IVA inclusa?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Organiq opera in regime forfettario: le prestazioni non sono soggette a IVA, quindi gli importi indicati in questa pagina sono quelli effettivi, senza alcuna maggiorazione. In fattura troverai la dicitura di legge sull'esenzione. Il preventivo è valido 30 giorni dalla data di emissione (settembre 2026).</p></div></div>
-      <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">Come funziona il pagamento?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Gestione e Formazione si pagano mensilmente in anticipo. Il pacchetto Componibile si salda alla conferma della fornitura. Per l’identità visiva, importo e modalità di pagamento sono da definire.</p></div></div>
+      <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">Come funziona il pagamento?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Gestione e Formazione si pagano mensilmente in anticipo. Il pacchetto Componibile si salda alla conferma della fornitura. Per l’identità visiva, il totale dipende dalle voci selezionate; le modalità di pagamento si concordano alla conferma.</p></div></div>
       <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">Cosa serve da parte nostra?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Tempo per una call iniziale di allineamento di un'ora, in cui fissiamo obiettivi, tono e priorità; poi l'accesso ai profili (per la Gestione) e, per il pacchetto Componibile, il girato da montare. Il resto lo mettiamo noi.</p></div></div>
       <div class="acc-item"><button class="acc-trigger" type="button" aria-expanded="false"><span class="acc-q">Quanto ci vuole a vedere risultati?</span><span class="acc-chev">⌄</span></button><div class="acc-panel"><p>Il primo mese serve a testare cosa funziona, il secondo a consolidare i format che hanno risposto meglio, dal terzo si spinge su quello che porta risultati. Lavoriamo in organico, senza sponsorizzate: i numeri crescono con la costanza delle uscite.</p></div></div>
     </div>
@@ -1018,6 +1024,22 @@ strong{color:var(--txt);font-weight:600}
   render();
 
   document.getElementById("printBtn").addEventListener("click", function(){ window.print(); });
+})();
+
+(function(){
+ const options=Array.from(document.querySelectorAll('input[name="brand-service"]'));
+ const money=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €';
+ function update(){
+  const selected=options.filter(o=>o.checked),total=selected.reduce((t,o)=>t+Number(o.dataset.price),0);
+  const list=document.getElementById('brandLines');list.replaceChildren();
+  if(!selected.length){const li=document.createElement('li');li.textContent='Nessuna voce selezionata';list.append(li);}
+  selected.forEach(o=>{const li=document.createElement('li');const name=document.createElement('span'),price=document.createElement('span');name.textContent=o.dataset.label;price.textContent=money(Number(o.dataset.price));li.append(name,price);list.append(li);});
+  document.getElementById('brandTotal').textContent=money(total);
+  const send=document.getElementById('sendBrand');send.textContent=selected.length?'Invia questo preventivo':'Parliamo della tua identità';
+  const body='Ciao Riccardo,\n\nho scelto questi servizi per VM English:\n'+selected.map(o=>'- '+o.dataset.label+': '+money(Number(o.dataset.price))).join('\n')+'\n\nTotale una tantum: '+money(total)+' (IVA non dovuta). Nessuno sconto applicato.';
+  send.href=selected.length?'mailto:organiqsocialagency@gmail.com?subject='+encodeURIComponent('Identità visiva — VM English')+'&body='+encodeURIComponent(body):'#contatti';
+ }
+ options.forEach(o=>o.addEventListener('change',update));update();
 })();
 </script>
 
